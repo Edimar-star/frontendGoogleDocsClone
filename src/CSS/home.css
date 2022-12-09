@@ -1,0 +1,68 @@
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.principal{
+    height: 87.8vh;
+}
+
+.documentos{
+    height: 90%;
+}
+
+.documentos > a, .documentos > #doc {
+    width: 22vh;
+    height: 28vh;
+    margin-left: 2vh;
+    margin-bottom: 2vh;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid rgb(153, 148, 148);
+    cursor: pointer;
+}
+
+.editor .ql-editor > p{
+    cursor: pointer;
+    font-size: .5vh;
+    user-select: none;
+}
+
+.editor .ql-editor > h1 {
+    font-size: 1vh;
+}
+
+.editor .ql-editor > h2 {
+    font-size: .9vh;
+}
+
+.editor .ql-editor > h3 {
+    font-size: .8vh;
+}
+
+.editor .ql-editor > h4 {
+    font-size: .7vh;
+}
+
+.editor .ql-editor > h5 {
+    font-size: .6vh;
+}
+
+.editor .ql-editor > h6 {
+    font-size: .5vh;
+}
+
+img{
+    height: 100%;
+}
+
+.editor{
+    height: 20vh;
+}
+
+.documentos {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+}
