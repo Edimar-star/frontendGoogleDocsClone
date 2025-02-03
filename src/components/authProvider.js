@@ -4,7 +4,7 @@ import { getRequest } from "./requests";
 const AuthProvider = () => {
     const AuthContext = createContext({});
     const user = JSON.parse(localStorage.getItem('user'))
-    const [auth, setAuth] = useState(user);
+    const [auth, setAuth] = useState(!user ? {} : user);
 
     const verifyAuth = async () => {
         const response = await getRequest('/getUser')
@@ -12,6 +12,7 @@ const AuthProvider = () => {
     }
 
     useEffect(() => {
+        if (!user) return;
         verifyAuth();
     }, [])
 
